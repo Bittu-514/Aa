@@ -1,5 +1,5 @@
 pipeline{
-  agent {label 'main'}
+  agent {label 'master'}
   stages{
     stage('Cleaning WS'){
       steps{
@@ -8,7 +8,7 @@ pipeline{
     }
     stage('repo pulling'){
       steps{
-        git branch: 'main', url: 'https://github.com/Bittu-514/Aa.git'
+        git branch: 'master', url: 'https://github.com/Bittu-514/Aa.git'
         sh "ls"
       }
     }
