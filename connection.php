@@ -1,5 +1,5 @@
 <?php  
-     	$servername = "localhost";
+     	$servername = "34.203.204.238";
 	$username = "admin";  
        	$password = "Bbbittu";  
        	$conn = mysql_connect ($servername , $username , $password) or die("unable to connect to host");  
