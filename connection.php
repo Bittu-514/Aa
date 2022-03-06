@@ -1,7 +1,14 @@
-<?php  
-     	$servername = "34.203.204.238";
-	$username = "admin";  
-       	$password = "Bbbittu";  
-       	$conn = mysql_connect ($servername , $username , $password) or die("unable to connect to host");  
-	$sql = mysql_select_db ('travel',$conn) or die("unable to connect to database");	
+<?php
+$servername = "localhost";
+$username = "admin";
+$password = "Bbbittu3";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
 ?>
